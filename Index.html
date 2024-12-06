@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF AR Viewer</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.2.1/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Páginas del PDF como imágenes en AR -->
+        <a-image src="pdf_page0001-01.png" position="0 0 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-02.png" position="0 1.5 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-03.png" position="0 3 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-04.png" position="0 4.5 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-05.png" position="0 6 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-06.png" position="0 7.5 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-07.png" position="0 9 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-08.png" position="0 10.5 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-09.png" position="0 12 -5" scale="3 3 1"></a-image>
+        <a-image src="pdf_page0001-10.png" position="0 13.5 -5" scale="3 3 1"></a-image>
+        <!-- Cámara AR -->
+        <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+</body>
+</html>
